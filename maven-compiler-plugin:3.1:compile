@@ -1,0 +1,11 @@
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project netty-mqtt: Fatal error compiling: java.lang.ExceptionInInitializerError: com.sun.tools.javac.code.TypeTags
+
+solution:
+The reason is that the lombok version is too low and does not support java10 or above.
+<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.4</version>
+    <scope>provided</scope>
+</dependency>
