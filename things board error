@@ -1,0 +1,6 @@
+errors during mvn clean install
+  thingsboard..........failure
+      edit pom.xml
+      add--->
+      <exclude>**/.*/**</exclude>
+      
