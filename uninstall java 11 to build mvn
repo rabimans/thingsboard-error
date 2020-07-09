@@ -1,0 +1,5 @@
+check java version
+java --version
+if it is greater than 8 remove it
+sudo apt-get remove --purge openjdk-9-jdk openjdk-9-jre 
+sudo apt-get remove --purge openjdk-9-jdk-headless openjdk-9-jre-headless
